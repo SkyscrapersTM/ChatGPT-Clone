@@ -4,6 +4,7 @@ import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import SideBar from "@/components/SideBar";
 import Login from "@/components/Login";
 import "./globals.css";
+import ClientProvider from "@/components/ClientProvider";
 
 export const metadata = {
   title: "ChatGPT Clone",
@@ -26,7 +27,7 @@ export default async function RootLayout({
           ) : (
             <div className="flex relative">
               <SideBar />
-              {/* ClientProvider - Notifications */}
+              <ClientProvider />
               <div id="home" className="bg-[#343541] flex-1">
                 {children}
               </div>
