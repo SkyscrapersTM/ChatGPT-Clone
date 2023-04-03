@@ -70,7 +70,7 @@ const SideBar = () => {
         {session && (
           <img
             onClick={() => signOut()}
-            className="h-12 w-13 rounded-full cursor-pointer mx-auto mb-2 hover:opacity-50"
+            className="h-12 w-13 rounded-full cursor-pointer mx-auto mb-12 hover:opacity-50"
             src={session.user?.image || ""}
             alt="Profile picture"
           />
